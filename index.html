@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap" rel="stylesheet">
+<style>
+/* CSS RESET */
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('gym.JPG');
+
+}
+.left{
+    display:  inline-block;
+    position: absolute;
+    left:60px ;
+    top:20px;
+}
+.left img{
+    width: 90px;
+}
+.left div{
+    text-align: center;
+    line-height: 19px;
+    font-size: 26px;
+}
+.mid{
+    display:  block;
+    width: 60%;
+    margin:29px auto;
+}
+.right{
+    position: absolute;
+    right:34px ;
+    top:43px ;
+    display:  inline-block;
+}
+.navbar{
+    display: inline-block;
+    cursor: pointer;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+
+.btn{
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 14 px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2', cursive;;
+}
+.btn:hover{
+    background-color: rgb(29, 28, 28);
+}
+.container{
+    margin: 106px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+}
+.formgroup input{
+    font-size: 25px;
+    margin: 11px auto;
+    text-align: center;
+    display: block;
+    width: 508px;
+    border-radius: 8px;
+    padding: 1px;
+    border: 2px solid black;
+    font-family: 'Baloo Bhaina 2', cursive;;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width:115% ;
+    margin:20px auto ;
+}
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- FOR LOGO -->
+        <div class="left">
+           <img src="logo.png" alt="">
+           <div>Fitness</div>
+        </div>
+
+        <!-- FOR NAV BAR -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href ="#" ></a>Home</li>
+                <li><a href ="#"></a>About Us</li>
+                <li><a href ="#"></a>Fitness Calculator</li>
+                <li><a href ="#"></a>Contact Us</li>
+            </ul>
+        </div>
+        <!-- FOR BUTTONS -->
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
